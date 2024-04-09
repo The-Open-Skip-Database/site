@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	background-color: #181a1b;
+	color: #d7e6e3;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 95vh;
+	overflow: hidden;
+	margin: 1.5rem;
+}
+
+form > div > div {
+	display: flex;
+	flex-direction: column;
+	margin-right: 1rem;
+}
+
+form > div {
+	display: flex;
+}
+
+input {
+	padding: 0.5rem 0.75rem;
+	background-color: #232627;
+	border-radius: 0.5rem;
+	border: rgb(39, 43, 44);
+}
+
+input:focus {
+	outline: none;
+	border: none;
+	background-color: #1b1f20 !important;
+}
+
+button {
+	background-color: #232627 !important;
+	color: white;
+	padding: 0.5rem 0.75rem;
+	margin: 1rem;
+	border-radius: 0.5rem;
+	border: none;
+	cursor: pointer;
+	transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+}
+
+button:hover {
+	background-color: #1b1f20 !important;
+}
+
+button:disabled {
+	background-color: #131414;
+	color: #666;
+	cursor: not-allowed;
+}
+
+#search {
+	background-color: #1a1c1d;
+	overflow-x: hidden;
+}
